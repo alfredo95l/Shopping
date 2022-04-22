@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xfQ2F0ZWdvcnlEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/AddCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEFkZENpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/AddState.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEFkZFN0YXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -55,12 +59,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/DeleteCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERlbGV0ZUNpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/DeleteState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERlbGV0ZVN0YXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/DetailsCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERldGFpbHNDaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/DetailsState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERldGFpbHNTdGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/EditCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEVkaXRDaXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/EditState.cshtml]
@@ -69,6 +93,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/_City.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9DaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/_CityDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9DaXR5RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/_Country.cshtml]
@@ -81,6 +113,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/_State.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9TdGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/Shoping/Shoping/Shoping/Views/Countries/_StateDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9TdGF0ZURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Proyects/Shoping/Shoping/Shoping/Views/Home/Index.cshtml]
