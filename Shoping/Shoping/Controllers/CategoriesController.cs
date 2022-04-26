@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shoping.Data;
 using Shoping.Data.Entities;
 
 namespace Shoping.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
         private readonly DataContext _context;
@@ -18,7 +20,7 @@ namespace Shoping.Controllers
             return View(await _context.Categorias.ToListAsync());
         }
 
-        [HttpGet]
+        
         public IActionResult Create()
         {
             return View();
@@ -124,7 +126,7 @@ namespace Shoping.Controllers
 
             return View(category);
         }
-
+     
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
