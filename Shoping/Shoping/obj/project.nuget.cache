@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LYL8SWbMyKnQpqPARgaOxMvbyZWy3aXxHy8azsUwJKsNMpJ6c1vunG+b9qHEbhQUSpxYvxAIjm0BIETZOK/9Xg==",
+  "dgSpecHash": "HRsL8FliPFBVyhyritRd5OoeGVrbk2isOhEM2T2spxsTH7JezQwBJVVpta4ckh21pcUVdPZ21rPiAF5IRrCHAQ==",
   "success": true,
   "projectFilePath": "C:\\Proyects\\Shoping\\Shoping\\Shoping\\Shoping.csproj",
   "expectedPackageFiles": [
@@ -189,7 +189,8 @@
     "C:\\Users\\USUARIO\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\USUARIO\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\USUARIO\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []
 }

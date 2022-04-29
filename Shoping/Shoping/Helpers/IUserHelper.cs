@@ -6,6 +6,7 @@ namespace Shoping.Helpers
 {
     public interface IUserHelper
     {
+        Task<User> AddUserAsync(AddUserViewModel model);
         Task<User> GetUserAsync(string email);
 
         Task<IdentityResult> AddUserAsync(User user, string password);
@@ -17,6 +18,8 @@ namespace Shoping.Helpers
         Task<bool> IsUserInRoleAsync(User user, string roleName);
         Task<SignInResult> LoginAsync(LoginViewModel model);
         Task LogoutAsync();
-
+        Task<IdentityResult> ChangePasswordAsync(User user, string oldPassword, string newPassword);
+        Task<IdentityResult> UpdateUserAsync(User user);
+        
     }
 }

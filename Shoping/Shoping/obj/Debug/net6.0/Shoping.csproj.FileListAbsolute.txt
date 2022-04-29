@@ -562,3 +562,4 @@ C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.AspNetCore.Crypto
 C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.WindowsAzure.Storage.dll

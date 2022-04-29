@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Shoping",
+    "\\Shoping\\Shoping",
+    "\\Shoping\\Shoping\\Controllers",
+    "\\Shoping\\Shoping\\Views",
+    "\\Shoping\\Shoping\\Views\\Home"
   ],
-  "SelectedNode": "\\C:\\Proyects\\Shoping",
+  "SelectedNode": "\\Shoping\\Shoping.sln",
   "PreviewInSolutionExplorer": false
 }
