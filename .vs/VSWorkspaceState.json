@@ -4,9 +4,13 @@
     "\\Shoping",
     "\\Shoping\\Shoping",
     "\\Shoping\\Shoping\\Controllers",
+    "\\Shoping\\Shoping\\Models",
     "\\Shoping\\Shoping\\Views",
-    "\\Shoping\\Shoping\\Views\\Home"
+    "\\Shoping\\Shoping\\Views\\Account",
+    "\\Shoping\\Shoping\\Views\\Home",
+    "\\Shoping\\Shoping\\wwwroot",
+    "\\Shoping\\Shoping\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Shoping\\Shoping.sln",
+  "SelectedNode": "\\Shoping\\Shoping\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

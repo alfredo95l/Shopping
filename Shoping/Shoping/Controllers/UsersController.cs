@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Shoping.Common;
 using Shoping.Data;
 using Shoping.Data.Entities;
 using Shoping.Enums;
@@ -16,13 +17,15 @@ namespace Shoping.Controllers
         private readonly IUserHelper _userHelper;
         private readonly IBlobHelper _blobHelper;
         private readonly ICombosHelper _combosHelper;
+        private readonly IMailHelper _mailHelper;
 
-        public UsersController(DataContext context, IUserHelper userHelper, IBlobHelper blobHelper, ICombosHelper combosHelper)
+        public UsersController(DataContext context, IUserHelper userHelper, IBlobHelper blobHelper, ICombosHelper combosHelper, IMailHelper mailHelper)
         {
             _context = context;
             _userHelper = userHelper;
             _blobHelper = blobHelper;
             _combosHelper = combosHelper;
+            _mailHelper = mailHelper;
         }
         public async Task<IActionResult> Index()
         {
@@ -51,38 +54,34 @@ namespace Shoping.Controllers
         {
             if (ModelState.IsValid)
             {
-                Guid imagenId = Guid.Empty;
+                Guid imageId = Guid.Empty;
+
                 if (model.ImageFile != null)
                 {
-                    imagenId = await _blobHelper.UploadBlobAsync(model.ImageFile, "users");
+                    imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "users");
                 }
-                model.ImageId = imagenId;
+
+                model.ImageId = imageId;
                 User user = await _userHelper.AddUserAsync(model);
                 if (user == null)
                 {
-                    ModelState.AddModelError(string.Empty, "Este correo ya esta siendo usado.");
+                    ModelState.AddModelError(string.Empty, "Este correo ya está siendo usado.");
                     model.Countries = await _combosHelper.GetComboCountriesAsync();
                     model.States = await _combosHelper.GetComboStatesAsync(model.CountryId);
                     model.Cities = await _combosHelper.GetComboCitiesAsync(model.StateId);
                     return View(model);
                 }
-                LoginViewModel loginViewModel = new LoginViewModel
-                {
-                    Password = model.Password,
-                    RememberMe = false,
-                    Username = model.Username
-                };
-                var result2 = await _userHelper.LoginAsync(loginViewModel);
-                if (result2.Succeeded)
-                {
-                    return RedirectToAction("Index", "Home");
-                }
+
+                return RedirectToAction("Index", "Home");
             }
+
             model.Countries = await _combosHelper.GetComboCountriesAsync();
             model.States = await _combosHelper.GetComboStatesAsync(model.CountryId);
             model.Cities = await _combosHelper.GetComboCitiesAsync(model.StateId);
             return View(model);
         }
+
+
         public JsonResult GetStates(int countryId)
         {
             Country country = _context.Countries

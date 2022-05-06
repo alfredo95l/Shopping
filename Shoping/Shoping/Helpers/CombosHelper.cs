@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Shoping.Data;
+using Shoping.Data.Entities;
 
 namespace Shoping.Helpers
 {
@@ -23,6 +24,29 @@ namespace Shoping.Helpers
                 .ToListAsync();
             list.Insert(0, new SelectListItem { Text = "[Seleccione una categoria...]", Value = "0" });
             
+            return list;
+        }
+
+        public async Task<IEnumerable<SelectListItem>> GetComboCategoriasAsync(IEnumerable<Category> filter)
+        {
+            List<Category> categories = await _context.Categorias.ToListAsync();
+            List<Category> categoriesFiltered = new();
+            foreach (Category category in categories)
+            {
+                if (!filter.Any(c => c.Id == category.Id))
+                {
+                    categoriesFiltered.Add(category);
+                }
+            }
+            List<SelectListItem> list = categoriesFiltered.Select(c => new SelectListItem
+            {
+                Text = c.Name,
+                Value = c.Id.ToString()
+            })
+               .OrderBy(x => x.Text)
+               .ToList();
+            list.Insert(0, new SelectListItem { Text = "[Seleccione un pais...]", Value = "0" });
+
             return list;
         }
 

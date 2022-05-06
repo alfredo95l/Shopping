@@ -563,3 +563,7 @@ C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.AspNetCore.Identi
 C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\Microsoft.WindowsAzure.Storage.dll
+C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\MailKit.dll
+C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\MimeKit.dll
+C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Proyects\Shoping\Shoping\Shoping\bin\Debug\net6.0\libman.json
